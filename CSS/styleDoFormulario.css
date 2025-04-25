@@ -1,0 +1,10 @@
+body {
+    background-color:rgba(67, 93, 181, 0.648);
+    color: black ;
+    padding-left: 0px;
+    margin: 10;
+}
+header {
+    text-align: center;
+    background-color: rgba(67, 141, 181, 0.833);
+}

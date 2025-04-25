@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um formulário simples">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste Formelário</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/styleDoFormulario.css">
+</head>
+<body>
+    <header>
+        <h1> Formulário</h1>
+        <p> Um teste simples de um formulário</p>
+        <a href="TodoSobreHTML.html"> Página inicial</a>
+        <br>
+    </header>
+    <main>
+        <form action="">
+            <h3> Cadrasto da conta</h3>
+            <!-- Nome -->
+            <label for="Area do nome">Nome;</label>
+            <input id="Area do nome" type="text" placeholder="Digite o seu nome" name="nome" required>
+            <br>
+            <!-- Senha -->
+            <label for="Area da senha">Senha:</label>
+            <input id="Area da senha" type="password" placeholder="Digite a sua senha" name="senha" required>
+            <br>
+            <!-- Data -->
+            <label for="Area da data"> Data de nascimento:</label>
+            <input id="Area da data" type="date" placeholder="Digite a sua  data" name="data" required>
+            <br>
+            <!--Email-->
+            <label for="Area do email">Email:</label>
+            <input id="Area do email" type="email" placeholder="Digite o seu email" name="email" required>
+            <br>
+            <input type="submit" value="Enviar">
+            <br> <br>
+            <hr>
+            <!-- Textarea -->
+            <label for="Campo para comentário"> Cometário:</label> <br>
+            <textarea id="Campo para comentário" placeholder="Deixe o seu comentário aqui" rows="5" cols="30"></textarea>
+            <br>
+            <!-- radiobuttons -->
+            <h3> Animal favorito</h3>
+            <input id="Area do genero" type="radio" name="genero" value="homem">
+            <label for="Area do genero"> Homem</label> 
+            <br>
+            <input id="Area da mulher" type="radio" name="genero" value="mulher">
+            <label for="Area da mulher"> Mulher</label>
+            <br>
+            <input id="Area do nenhum" type="radio" name="genero" value="nenhum dos dois anteriores">
+            <label for="Area do nenhum"> Nenhum dos dois anteriores (tô com preguiça de pensar no resto)</label>
+            
+            <br>
+            <!-- checkbox -->
+            <h3> Dispositivos eletrônicos que hão em sua casa</h3>
+            <input id="opcao1" type="checkbox" name="dispositivo" value="celular">
+            <label for="opcao1"> Celular</label> <br>
+            <input id="opcao2" type="checkbox" name="dispositivo" value="pc">
+            <label for="opcao2"> PC</label> <br>
+            <input id="opcao3" type="checkbox" name="dispositivo" value="nootbook">
+            <label for="opcao3"> Nootbook</label>            
+        </form>
+    </main>
+</body>
+</html>

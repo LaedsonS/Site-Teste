@@ -1,0 +1,37 @@
+body {
+    margin: 15px;
+    background-color: #4232b9;
+}
+header {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #ff7f50;
+    border: solid;
+    
+}
+main {
+    border-style: solid;
+    margin: 45px;
+    padding-left: 10px;
+    background-color: whitesmoke;
+    
+}
+h3 {
+    font-size: 25px;
+    padding: 5px;
+    color: #4232b9;
+    background-color: #4fd0ff;
+    border-style: solid;
+    width: 40%;
+}
+h4 {
+    margin-bottom: 1px;
+}
+ul {
+    line-height: 30px;
+}
+ol {
+    list-style-type: lower-alpha;
+    line-height: 30px;
+}
