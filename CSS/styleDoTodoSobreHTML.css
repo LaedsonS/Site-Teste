@@ -20,9 +20,10 @@ main {
 h3 {
     font-size: 25px;
     padding: 5px;
-    color: #4232b9;
     background-color: #4fd0ff;
-    border-style: solid;
+    text-align: center;
+    border: solid;
+    border-color: rebeccapurple;
     width: 40%;
 }
 h4 {

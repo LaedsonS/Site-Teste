@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre o CSS</title>
+    <link rel="stylesheet" href="../../CSS/styleTudoSobreCSS.css">
+</head>
+<body>
+    <header>
+    <h1>Todo sobre CSS</h1>
+    <br>
+    <a class="botao" href="../Tudo-Sobre-HTML/TodoSobreHTML.html">Acessar também <cite>TodoSobreHTML</cite></a>
+    </header>
+    <main>
+        <!-- Classificações de como o CSS é aplicado em páginas web -->
+        <section>
+            <h2>Classificações de como o CSS é aplicado em páginas web</h2>
+            <table class="centralizar">
+                <tr>
+                    <th>Tipo de CSS</th>
+                    <th>Onde é aplicado</th>
+                    <th>Como é implementado</th>
+                    <th>Uso principal</th>
+                    <th>Vantagens principais</th>
+                    <th>Desvantagens principais</th>
+                </tr>
+                <tr>
+                    <td>Inline</td>
+                    <td>Diretamente no elemento HTML</td>
+                    <td>Atributo style na tag HTML</td>
+                    <td>Estilizar elementos específicos</td>
+                    <td>Fácil e rápido para alterações pontuais</td>
+                    <td>Difícil manutenção e repetição</td>
+                </tr>
+                <tr>
+                    <td>Interno</td>
+                    <td>Dentro do documento HTML</td>
+                    <td>Tag &lt;style&gt; no &lt;head&gt;</td>
+                    <td>Estilizar uma única página</td>
+                    <td>Centraliza estilos na página</td>
+                    <td>Não reaproveita estilos entre páginas</td>
+                </tr>
+                <tr>
+                    <td>Externo</td>
+                    <td>Arquivo CSS separado</td>
+                    <td>Arquivo .css referenciado via &lt;link&gt;</td>
+                    <td>Estilizar múltiplas páginas</td>
+                    <td>Reutilização, organização e desempenho</td>
+                    <td>Requer carregamento externo</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <!-- Seletores e Classes -->
+        <section>
+            <h2> Seletores e Classes</h2>
+            <dl>
+                <dt>Seletores</dt>
+                <dd>Seletores são padrões usados para identificar quais elementos HTML serão estilizados pelo CSS. Eles permitem direcionar elementos específicos na página para aplicar regras de estilo. Existem vários tipos de seletores, incluindo:</dd>
+                <dt>Seletores de tipo</dt>
+                <dd>Selecionam todos os elementos de um determinado tipo, como todos os &lt;p&gt; ou &lt;h1&gt;.</dd>
+                <dt>Seletores de ID</dt>
+                <dd>Selecionam um elemento único com um ID específico. <br>
+                    No HTML: &lt;p id="NoCentro"&gt; <br>
+                    No CSS: #NoCentro{ text-aling: center;}</dd>
+                <dt>Seletores de classe ou Classes</dt>
+                <dd>Classes são atributos HTML que podem ser atribuídos a um ou vários elementos para categorizá-los ou agrupá-los para aplicação de estilos comuns. Elas são definidas no HTML usando o atributo class e referenciadas no CSS com um ponto (.) seguido do nome da classe. <br>
+                    No HTML: &lt;h2 class="Vermelho"&gt; <br>
+                    No CSS: .vermelho{ color: vermolho;}</dd>
+            </dl>
+        </section>
+        <hr>
+         <!-- Propriedade Color -->
+        <section>
+            <h2>Propriedade Color</h2>
+            <p>A propriedade <strong>color</strong> no CSS é usada para definir a cor do texto de um elemento HTML, incluindo seu conteúdo textual e decorações como sublinhados ou sombras de texto.
+                Ela afeta diretamente a cor dos caracteres dentro do elemento ao qual é aplicada.</p>
+            <h3>A sintaxe básica da propriedade é:</h3>
+            <p>color: valor;</p>
+            <h3>Onde o valor pode ser:</h3>
+            <ul>
+                <li>Nome da cor (ex: red, blue, rebeccapurple)</li>
+                <li>Código hexadecimal (ex: #ff0000, #090)</li>
+                <li>Valores RGB ou RGBA (ex: rgb(255, 0, 0), rgba(255, 0, 0, 0.5))</li>
+                <li>Valores HSL ou HSLA (ex: hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5))</li>
+                <li>Valores globais como inherit, initial e unset</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Propriedade Background -->
+        <section>
+            <h2>Propriedade Background</h2>
+            <p>A propriedade background no CSS é uma forma abreviada (shorthand) que permite definir várias propriedades relacionadas ao plano de fundo de um elemento em uma única declaração.
+            Ela pode incluir valores para cor, imagem, posição, repetição, tamanho, origem, recorte e fixação do fundo, entre outros aspectos.
+            </p>
+            <h3>Propriedades que a shorthand background pode definir</h3>
+            <ul>
+                <li>background-color: define a cor de fundo do elemento.</li>
+                <li>background-image: define uma ou mais imagens de fundo.</li>
+                <li>background-repeat: controla se e como a imagem de fundo se repete.</li>
+                <li>background-attachment: determina se a imagem de fundo é fixa ou rola com o conteúdo.</li>
+                <li>background-position: define a posição inicial da imagem de fundo.</li>
+                <li>background-size: especifica o tamanho da imagem de fundo.</li>
+                <li>background-origin: define a área do box onde a imagem começa a ser posicionada.</li>
+                <li>background-clip: especifica a área do box onde o fundo é pintado.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Propriedade Border -->
+        <section>
+            <h2>Propriedade Border</h2>
+            <p>A propriedade border no CSS é uma forma abreviada (shorthand) que permite definir a borda de um elemento HTML, incluindo sua largura, estilo e cor, em uma única declaração.</p>
+            <h3>Componentes principais da propriedade border</h3>
+            <ul>
+                <li><strong>border-width:</strong> define a espessura da borda. Pode ser especificada em unidades como pixels (px), em, rem, vh, vw, ou por palavras-chave como thin (1px), medium (3px) e thick (5px).</li>
+                <li><strong>border-style:</strong> determina o estilo da borda. Os valores mais comuns são:
+                <ul>
+                    <li>none (sem borda)</li>
+                    <li>solid (linha contínua)</li>
+                    <li>dotted (pontilhada)</li>
+                    <li>dashed (tracejada)</li>
+                    <li>double (linha dupla)</li>
+                    <li>Outros estilos como groove, ridge, inset e outset também são suportados</li>
+                </ul>
+                <br>
+                <li><strong>border-color:</strong> define a cor da borda, que pode ser especificada por nome (ex: red), código hexadecimal (ex: #000000), RGB, HSL, etc.</li>
+                <li><strong>border-radius:</strong> arredonda os cantos das bordas de um elemento. </li>
+                <br>
+                <li>Propriedades relacionadas para bordas específicas: Além da propriedade geral border, é possível definir bordas individualmente para cada lado do elemento:
+                <ul>
+                    <li>border-top</li>
+                    <li>border-right</li>
+                    <li>border-bottom</li>
+                    <li>border-left</li>
+                </ul>
+            </ul>
+            <p>A borda faz parte do modelo de caixa (box model) do CSS, posicionada entre o padding e a margin do elemento. <br>
+            A borda padrão é none, ou seja, invisível, até que seja definida uma largura e um estilo. <br>
+            É possível usar a propriedade border para estilizar bordas com imagens, embora isso envolva propriedades específicas adicionais.</p>
+            <p>A propriedade border aceita até três valores na seguinte ordem: border: &lt;border-width&gt; &lt;border-style&gt; &lt;border-color&gt;;</p>
+        </section>
+        <hr>
+        <!-- Propriedade Margin -->
+        <section>
+            <h2>Propriedade Marginr</h2>
+            <p>A propriedade <strong>margin</strong> no CSS define a área de margem externa de um elemento, ou seja, o espaço em volta dele, fora de qualquer borda. Ela pode ser usada para criar espaçamento entre elementos na página.</p>
+            <h3>Como funciona a propriedade margin</h3>
+            <ul>
+                <li><h4>margin é uma propriedade abreviada (shorthand) que pode definir as margens dos quatro lados do elemento:</h4></li>
+                <ul>
+                    <li>margin-top</li>
+                    <li>margin-bottom</li>
+                    <li>margin-right</li>
+                    <li>margin-left</li>
+                </ul>
+                <li><h4>A sintaxe pode receber de 1 a 4 valores, que são aplicados conforme a ordem:</h4></li>
+                <ul>
+                    <li>1 valor: aplica a mesma margem para os quatro lados.</li>
+                    <li>2 valores: o primeiro para as margens superior e inferior, o segundo para as margens direita e esquerda.</li>
+                    <li>3 valores: o primeiro para a margem superior, o segundo para as margens direita e esquerda, o terceiro para a margem inferior.</li>
+                    <li>4 valores: aplicados na ordem top, right, bottom, left (sentido horário).</li>
+                    <li>Exemplo: margin: 10px 50px 20px 0; /* topo 10px, direita 50px, base 20px, esquerda 0 */</li>
+                </ul>
+                <br>
+                <li>Margens criam espaço transparente e não podem ser preenchidas com cor nem receber bordas.</li>
+                <li>Elementos inline não aceitam margin-top e margin-bottom, apenas elementos block ou inline-block.</li>
+                <li>Margens adjacentes entre elementos podem se "fundir" (colapso de margem), prevalecendo a maior margem.</li>
+                <li>Valores negativos podem ser usados para sobrepor elementos, mas devem ser usados com cuidado.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Propriedade Padding -->
+        <section>
+            <h2>Propriedade Padding</h2>
+            <p>A propriedade padding no CSS define o espaçamento interno entre o conteúdo de um elemento e suas bordas, criando um espaço "de dentro" que afasta o conteúdo das bordas do elemento.<br> É uma propriedade abreviada que pode definir os quatro lados do preenchimento: superior, direito, inferior e esquerdo.</p>
+            <h3>Como funciona a propriedade padding</h3>
+            <ul>
+                <li>Pode ser usada com 1 a 4 valores, aplicados na ordem: top (superior), right (direito), bottom (inferior), left (esquerdo). Exemplo:</li>
+                <ul>
+                    <li>padding: 20px; - aplica 20px em todos os lados.</li>
+                    <li>padding: 10px 15px; - 10px no topo e base, 15px nas laterais.</li>
+                    <li>padding: 5px 10px 15px; - 5px no topo, 10px nas laterais, 15px na base.
+                    <li>padding: 5px 10px 15px 20px; - valores específicos para cada lado, no sentido horário começando pelo topo.</li>
+                </ul>
+                <li>Também é possível definir o padding individualmente com: padding-top, padding-right, padding-bottom, padding-left.</li>
+                <li>Valores negativos não são permitidos para padding.</li>
+                <li>O padding aumenta o tamanho total do elemento, pois é somado à largura e altura definidas, a menos que se use box-sizing: border-box para incluir o padding dentro do tamanho total do elemento.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Criando um botão simples com padding -->
+        <section>
+            <h2>Criando um botão simples com padding</h2>
+            <p>.botao {<br>
+                    text-decoration: none;<br>
+                    padding:20px;<br>
+                    margin-bottom: 70px;<br>
+                    border-style: double;<br>
+                    border-radius: 50px;<br>
+                    border-color: black;<br>
+                    color: rgb(27, 79, 70);<br>
+                    background-color: rgb(227, 173, 58);<br>
+                }<br>
+                .botao:hover {<br>
+                color:blue;<br>
+                background-color: violet;<br>
+                }</p>
+        </section>
+        <hr>
+        <!-- Propriedade Width e Height -->
+        <section>
+            <h2> Propriedade Width e Height</h2>
+            <p>As propriedades width e height são usadas para definir, respectivamente, a largura e a altura da área de conteúdo de um elemento, principalmente em CSS e programação visual.</p>
+            <h3> Propriedade Width</h3>
+            <ul>
+                <li>Define a largura da área de conteúdo de um elemento, excluindo margens, bordas e preenchimentos (padding).</li>
+                <li>Pode ser especificada em valores absolutos (pixels, em, rem, etc.), percentuais (em relação ao elemento pai) ou como auto para ajuste automático.</li>
+                <li>As propriedades min-width e max-width podem limitar a largura mínima e máxima, sobrescrevendo o valor de width.</li>
+                <li>Aplica-se a quase todos os elementos, exceto alguns inline e elementos de tabela específicos.</li>
+            </ul>
+            <h3> Propriedade Height</h3>
+            <ul>
+                <li>Define a altura da área de conteúdo de um elemento, também excluindo margens, bordas e preenchimentos.</li>
+                <li>Pode ser especificada em unidades absolutas, percentuais (em relação à altura do elemento pai, se definida) ou como auto.</li>
+                <li>As propriedades min-height e max-height limitam a altura mínima e máxima, sobrepondo o valor de height.</li>
+                <li>Aplica-se a quase todos os elementos, exceto alguns inline e elementos de tabela específicos.</li>
+            </ul>
+        </section>
+        <hr>
+        <!--  Propriedade Text -->
+        <section>
+            <h2> Propriedade Text</h2>
+            <p>A propriedade text em CSS não é uma propriedade única, mas o termo geralmente se refere ao conjunto de propriedades usadas para estilizar textos em páginas web. Essas propriedades controlam a aparência, formatação e disposição do texto.</p>
+            <ul>
+                <li>text-aling: Controla como o texto (ou outros conteúdos inline) é alinhado na horizontal dentro do seu contêiner. 
+                    Pode ser: left(clinha o texto à esquerda), right(clinha o texto à direita), center(centraliza o texto horizontalmente dentro do elemento), justify(Estica as linhas do texto para que as margens esquerda e direita fiquem alinhadas), inherit(O elemento herda o valor de alinhamento do seu elemento pai).</li>
+                <li>direction: Afeta o fluxo do texto e também pode influenciar o layout de elementos, como em contêineres flexíveis, onde a direção do eixo principal pode ser afetada pelo valor de direction. pode ser: ltr ou rtl</li>
+                <li>unicone-bide: Corrige a exibição de textos que misturam idiomas com direções diferentes. Permite sobrescrever o algoritmo padrão do Unicode para manipulação de texto bidirecional, definindo níveis de incorporação e isolamento.</li>
+                <li>color: Define a cor do texto. </li>
+                <li>font-size: Define o tamanho da fonte, podendo usar unidades como px, em, %, pt.</li>
+                <li>text-decoration: Aplica decorações ao texto, como underline (sublinhado), overline (linha acima), line-through (riscado) ou none (sem decoração).</li>
+                <li>text-transform: Altera a capitalização do texto, com valores como uppercase (maiúsculas), lowercase (minúsculas) e capitalize (primeira letra maiúscula).</li>
+                <li>text-indent: Define o espaçamento da primeira linha de uma paragráfo.</li>
+                <li>word-spacing: Ajusta o espaçamento entre palavras.</li>
+                <li>letter-spacing: Ajusta o espaçamento entre letras. Pode ser negativo, fazendo com que as letras se sobrepõem</li>
+                <li>line-height: Ajusta o espaçamento entre linhas. Pode ser negativo, fazendo com que as linhas se sobrepõem</li>
+            </ul>           
+        </section>
+        <hr>
+        <!--  Propriedade Font -->
+        <section>
+            <h2> Propriedade Font</h2>
+            <p>responsável por definir a formatação das fontes utilizadas em uma página web. Ela pode ser usada para configurar várias características do texto, como família, tamanho, estilo e variante da fonte.</p>
+            <ul>
+                <li>font-style: Define o estilo da fonte, podendo ser normal (padrão), italic (itálico) ou oblique (obliquo).</li>                
+                <li>font-size: Define o tamanho da fonte, aceitando unidades como px, em, %, entre outras.</li>
+                <li>font-weight: Controla o peso da fonte, como normal, negrito, etc.</li>
+                <li>font-family: : Especifica a família da fonte a ser usada. Pode incluir uma lista de fontes em ordem de prioridade, terminando geralmente com uma família genérica como serif, sans-serif ou monospace para garantir uma fonte alternativa caso as anteriores não estejam disponíveis no sistema do usuário.</li>
+            </ul>
+           
+        </section>
+        <hr>
+    </main>
+</body>
+</html>

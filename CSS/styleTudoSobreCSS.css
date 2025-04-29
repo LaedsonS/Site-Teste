@@ -1,0 +1,46 @@
+body {
+    background-image: url(../BagulhosAleatorios/background-1591228_640.webp);
+    background-size: cover;
+}
+header {
+    margin: 60px 50% 10px 40px;
+    border-style:  solid;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:aliceblue;
+}
+main {
+    border-style: solid;
+    background-color:aliceblue;
+    margin: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+table, th, td {
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.centralizar {
+    margin-left: auto;
+    margin-right: auto;
+}
+.botao {
+    text-decoration: none;
+    padding:20px; 
+    margin-bottom: 70px;  
+    border-style: double;
+    border-radius: 50px;
+    border-color: black;
+    color: rgb(27, 79, 70);
+    background-color: rgb(227, 173, 58);
+}
+.botao:hover {
+    color:blue;
+    background-color: violet;
+}
