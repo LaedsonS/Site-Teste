@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo sobre o CSS</title>
+    <title>Tudo sobre o CSS</title>
     <link rel="stylesheet" href="../../CSS/styleTudoSobreCSS.css">
 </head>
 <body>
     <header>
-    <h1>Todo sobre CSS</h1>
-    <br>
-    <a class="botao" href="../Tudo-Sobre-HTML/TodoSobreHTML.html">Acessar também <cite>TodoSobreHTML</cite></a>
+    <h1>Tudo sobre CSS</h1>
+    <a class="botao" href="../Tudo-Sobre-HTML/TudoSobreHTML.html">Acessar também <cite>TodoSobreHTML</cite></a>
     </header>
     <main>
         <!-- Classificações de como o CSS é aplicado em páginas web -->
@@ -79,7 +78,7 @@
             <h3>A sintaxe básica da propriedade é:</h3>
             <p>color: valor;</p>
             <h3>Onde o valor pode ser:</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li>Nome da cor (ex: red, blue, rebeccapurple)</li>
                 <li>Código hexadecimal (ex: #ff0000, #090)</li>
                 <li>Valores RGB ou RGBA (ex: rgb(255, 0, 0), rgba(255, 0, 0, 0.5))</li>
@@ -95,7 +94,7 @@
             Ela pode incluir valores para cor, imagem, posição, repetição, tamanho, origem, recorte e fixação do fundo, entre outros aspectos.
             </p>
             <h3>Propriedades que a shorthand background pode definir</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li>background-color: define a cor de fundo do elemento.</li>
                 <li>background-image: define uma ou mais imagens de fundo.</li>
                 <li>background-repeat: controla se e como a imagem de fundo se repete.</li>
@@ -112,7 +111,7 @@
             <h2>Propriedade Border</h2>
             <p>A propriedade border no CSS é uma forma abreviada (shorthand) que permite definir a borda de um elemento HTML, incluindo sua largura, estilo e cor, em uma única declaração.</p>
             <h3>Componentes principais da propriedade border</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li><strong>border-width:</strong> define a espessura da borda. Pode ser especificada em unidades como pixels (px), em, rem, vh, vw, ou por palavras-chave como thin (1px), medium (3px) e thick (5px).</li>
                 <li><strong>border-style:</strong> determina o estilo da borda. Os valores mais comuns são:
                 <ul>
@@ -146,16 +145,16 @@
             <h2>Propriedade Marginr</h2>
             <p>A propriedade <strong>margin</strong> no CSS define a área de margem externa de um elemento, ou seja, o espaço em volta dele, fora de qualquer borda. Ela pode ser usada para criar espaçamento entre elementos na página.</p>
             <h3>Como funciona a propriedade margin</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li><h4>margin é uma propriedade abreviada (shorthand) que pode definir as margens dos quatro lados do elemento:</h4></li>
-                <ul>
+                <ul class="lista-grudada">
                     <li>margin-top</li>
                     <li>margin-bottom</li>
                     <li>margin-right</li>
                     <li>margin-left</li>
                 </ul>
                 <li><h4>A sintaxe pode receber de 1 a 4 valores, que são aplicados conforme a ordem:</h4></li>
-                <ul>
+                <ul class="lista-grudada">
                     <li>1 valor: aplica a mesma margem para os quatro lados.</li>
                     <li>2 valores: o primeiro para as margens superior e inferior, o segundo para as margens direita e esquerda.</li>
                     <li>3 valores: o primeiro para a margem superior, o segundo para as margens direita e esquerda, o terceiro para a margem inferior.</li>
@@ -175,7 +174,7 @@
             <h2>Propriedade Padding</h2>
             <p>A propriedade padding no CSS define o espaçamento interno entre o conteúdo de um elemento e suas bordas, criando um espaço "de dentro" que afasta o conteúdo das bordas do elemento.<br> É uma propriedade abreviada que pode definir os quatro lados do preenchimento: superior, direito, inferior e esquerdo.</p>
             <h3>Como funciona a propriedade padding</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li>Pode ser usada com 1 a 4 valores, aplicados na ordem: top (superior), right (direito), bottom (inferior), left (esquerdo). Exemplo:</li>
                 <ul>
                     <li>padding: 20px; - aplica 20px em todos os lados.</li>
@@ -213,14 +212,14 @@
             <h2> Propriedade Width e Height</h2>
             <p>As propriedades width e height são usadas para definir, respectivamente, a largura e a altura da área de conteúdo de um elemento, principalmente em CSS e programação visual.</p>
             <h3> Propriedade Width</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li>Define a largura da área de conteúdo de um elemento, excluindo margens, bordas e preenchimentos (padding).</li>
                 <li>Pode ser especificada em valores absolutos (pixels, em, rem, etc.), percentuais (em relação ao elemento pai) ou como auto para ajuste automático.</li>
                 <li>As propriedades min-width e max-width podem limitar a largura mínima e máxima, sobrescrevendo o valor de width.</li>
                 <li>Aplica-se a quase todos os elementos, exceto alguns inline e elementos de tabela específicos.</li>
             </ul>
             <h3> Propriedade Height</h3>
-            <ul>
+            <ul class="lista-grudada">
                 <li>Define a altura da área de conteúdo de um elemento, também excluindo margens, bordas e preenchimentos.</li>
                 <li>Pode ser especificada em unidades absolutas, percentuais (em relação à altura do elemento pai, se definida) ou como auto.</li>
                 <li>As propriedades min-height e max-height limitam a altura mínima e máxima, sobrepondo o valor de height.</li>
@@ -251,14 +250,13 @@
         <!--  Propriedade Font -->
         <section>
             <h2> Propriedade Font</h2>
-            <p>responsável por definir a formatação das fontes utilizadas em uma página web. Ela pode ser usada para configurar várias características do texto, como família, tamanho, estilo e variante da fonte.</p>
+            <p>Responsável por definir a formatação das fontes utilizadas em uma página web. Ela pode ser usada para configurar várias características do texto, como família, tamanho, estilo e variante da fonte.</p>
             <ul>
                 <li>font-style: Define o estilo da fonte, podendo ser normal (padrão), italic (itálico) ou oblique (obliquo).</li>                
                 <li>font-size: Define o tamanho da fonte, aceitando unidades como px, em, %, entre outras.</li>
                 <li>font-weight: Controla o peso da fonte, como normal, negrito, etc.</li>
                 <li>font-family: : Especifica a família da fonte a ser usada. Pode incluir uma lista de fontes em ordem de prioridade, terminando geralmente com uma família genérica como serif, sans-serif ou monospace para garantir uma fonte alternativa caso as anteriores não estejam disponíveis no sistema do usuário.</li>
             </ul>
-           
         </section>
         <hr>
     </main>

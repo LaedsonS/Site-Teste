@@ -6,9 +6,7 @@ header {
     margin: 60px 50% 10px 40px;
     border-style:  solid;
     border-radius: 20px;
-    padding-left: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0px 40px 40px;
     background-color:aliceblue;
 }
 main {
@@ -18,7 +16,30 @@ main {
     padding-right: 30px;
     padding-left: 30px;
 }
-table, th, td {
+h1 {
+    border: solid 3px;
+    padding: 5px 7px;
+    display:inline;
+    font-size: 40px;
+}
+section:hover {
+    background-color: #eea8fb;
+    border: solid gray;
+    padding-left: 10px;
+}
+h2 {
+    border: dotted 3px rgb(36, 151, 41);
+    border-radius: 50px;
+    width: 35%;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #bef1ba;
+}
+h3, h4 {
+    margin-bottom: 1px; 
+}
+table, th, td { 
     border-style: solid;
     border-width: 1px;
     align-items: center;
@@ -30,15 +51,18 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.lista-grudada {
+    margin-top: 3px;
+}
 .botao {
     text-decoration: none;
-    padding:20px; 
-    margin-bottom: 70px;  
-    border-style: double;
+    padding:15px 20px;
+    /* margin-left: 70px; */
+    border: double black;
     border-radius: 50px;
-    border-color: black;
     color: rgb(27, 79, 70);
     background-color: rgb(227, 173, 58);
+    font-size: 20px;
 }
 .botao:hover {
     color:blue;
