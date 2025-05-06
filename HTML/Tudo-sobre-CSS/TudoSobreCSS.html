@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-    <h1>Tudo sobre CSS</h1>
-    <a class="botao" href="../Tudo-Sobre-HTML/TudoSobreHTML.html">Acessar também <cite>TodoSobreHTML</cite></a>
+        <h1>Tudo sobre CSS</h1>
+        <a class="botao" href="../Tudo-Sobre-HTML/TudoSobreHTML.html">Acessar também <cite>TodoSobreHTML</cite></a>
     </header>
     <main>
         <!-- Classificações de como o CSS é aplicado em páginas web -->
         <section>
             <h2>Classificações de como o CSS é aplicado em páginas web</h2>
-            <table class="centralizar">
+            <table>
                 <tr>
                     <th>Tipo de CSS</th>
                     <th>Onde é aplicado</th>
@@ -64,7 +64,8 @@
                     No HTML: &lt;p id="NoCentro"&gt; <br>
                     No CSS: #NoCentro{ text-aling: center;}</dd>
                 <dt>Seletores de classe ou Classes</dt>
-                <dd>Classes são atributos HTML que podem ser atribuídos a um ou vários elementos para categorizá-los ou agrupá-los para aplicação de estilos comuns. Elas são definidas no HTML usando o atributo class e referenciadas no CSS com um ponto (.) seguido do nome da classe. <br>
+                <dd>Classes são atributos HTML que podem ser atribuídos a um ou vários elementos para categorizá-los ou agrupá-los para aplicação de estilos comuns.
+                    Elas são definidas no HTML usando o atributo class e referenciadas no CSS com um ponto (.) seguido do nome da classe. <br>
                     No HTML: &lt;h2 class="Vermelho"&gt; <br>
                     No CSS: .vermelho{ color: vermolho;}</dd>
             </dl>
@@ -94,16 +95,24 @@
             Ela pode incluir valores para cor, imagem, posição, repetição, tamanho, origem, recorte e fixação do fundo, entre outros aspectos.
             </p>
             <h3>Propriedades que a shorthand background pode definir</h3>
-            <ul class="lista-grudada">
-                <li>background-color: define a cor de fundo do elemento.</li>
-                <li>background-image: define uma ou mais imagens de fundo.</li>
-                <li>background-repeat: controla se e como a imagem de fundo se repete.</li>
-                <li>background-attachment: determina se a imagem de fundo é fixa ou rola com o conteúdo.</li>
-                <li>background-position: define a posição inicial da imagem de fundo.</li>
-                <li>background-size: especifica o tamanho da imagem de fundo.</li>
-                <li>background-origin: define a área do box onde a imagem começa a ser posicionada.</li>
-                <li>background-clip: especifica a área do box onde o fundo é pintado.</li>
-            </ul>
+            <dl class="lista-grudada">
+                <dt>background-color:</dt>
+                <dd>Define a cor de fundo do elemento.</dd>
+                <dt>background-image:</dt>
+                <dd>Define uma ou mais imagens de fundo.</dd>
+                <dt>background-repeat:</dt>
+                <dd>Controla se e como a imagem de fundo se repete.</dd>
+                <dt>background-attachment:</dt>
+                <dd>Determina se a imagem de fundo é fixa ou rola com o conteúdo</dd>
+                <dt>background-position:</dt>
+                <dd>Define a posição inicial da imagem de fundo.</dd>
+                <dt>background-size:</dt>
+                <dd>Especifica o tamanho da imagem de fundo</dd>
+                <dt>background-origin:</dt>
+                <dd>Define a área do box onde a imagem começa a ser posicionada.</dd>   
+                <dt>background-clip:</dt>
+                <dd>Especifica a área do box onde o fundo é pintado.</dd>
+            </dl>
         </section>
         <hr>
         <!-- Propriedade Border -->
@@ -172,7 +181,8 @@
         <!-- Propriedade Padding -->
         <section>
             <h2>Propriedade Padding</h2>
-            <p>A propriedade padding no CSS define o espaçamento interno entre o conteúdo de um elemento e suas bordas, criando um espaço "de dentro" que afasta o conteúdo das bordas do elemento.<br> É uma propriedade abreviada que pode definir os quatro lados do preenchimento: superior, direito, inferior e esquerdo.</p>
+            <p>A propriedade padding no CSS define o espaçamento interno entre o conteúdo de um elemento e suas bordas, criando um espaço "de dentro" que afasta o conteúdo das bordas do elemento.
+                É uma propriedade abreviada que pode definir os quatro lados do preenchimento: superior, direito, inferior e esquerdo.</p>
             <h3>Como funciona a propriedade padding</h3>
             <ul class="lista-grudada">
                 <li>Pode ser usada com 1 a 4 valores, aplicados na ordem: top (superior), right (direito), bottom (inferior), left (esquerdo). Exemplo:</li>
@@ -227,13 +237,14 @@
             </ul>
         </section>
         <hr>
-        <!--  Propriedade Text -->
+        <!-- Propriedade Text -->
         <section>
             <h2> Propriedade Text</h2>
             <p>A propriedade text em CSS não é uma propriedade única, mas o termo geralmente se refere ao conjunto de propriedades usadas para estilizar textos em páginas web. Essas propriedades controlam a aparência, formatação e disposição do texto.</p>
             <ul>
                 <li>text-aling: Controla como o texto (ou outros conteúdos inline) é alinhado na horizontal dentro do seu contêiner. 
-                    Pode ser: left(clinha o texto à esquerda), right(clinha o texto à direita), center(centraliza o texto horizontalmente dentro do elemento), justify(Estica as linhas do texto para que as margens esquerda e direita fiquem alinhadas), inherit(O elemento herda o valor de alinhamento do seu elemento pai).</li>
+                    Pode ser: left(clinha o texto à esquerda), right(clinha o texto à direita), center(centraliza o texto horizontalmente dentro do elemento),
+                    justify(Estica as linhas do texto para que as margens esquerda e direita fiquem alinhadas), inherit(O elemento herda o valor de alinhamento do seu elemento pai).</li>
                 <li>direction: Afeta o fluxo do texto e também pode influenciar o layout de elementos, como em contêineres flexíveis, onde a direção do eixo principal pode ser afetada pelo valor de direction. pode ser: ltr ou rtl</li>
                 <li>unicone-bide: Corrige a exibição de textos que misturam idiomas com direções diferentes. Permite sobrescrever o algoritmo padrão do Unicode para manipulação de texto bidirecional, definindo níveis de incorporação e isolamento.</li>
                 <li>color: Define a cor do texto. </li>
@@ -247,7 +258,7 @@
             </ul>           
         </section>
         <hr>
-        <!--  Propriedade Font -->
+        <!-- Propriedade Font -->
         <section>
             <h2> Propriedade Font</h2>
             <p>Responsável por definir a formatação das fontes utilizadas em uma página web. Ela pode ser usada para configurar várias características do texto, como família, tamanho, estilo e variante da fonte.</p>
@@ -255,10 +266,342 @@
                 <li>font-style: Define o estilo da fonte, podendo ser normal (padrão), italic (itálico) ou oblique (obliquo).</li>                
                 <li>font-size: Define o tamanho da fonte, aceitando unidades como px, em, %, entre outras.</li>
                 <li>font-weight: Controla o peso da fonte, como normal, negrito, etc.</li>
-                <li>font-family: : Especifica a família da fonte a ser usada. Pode incluir uma lista de fontes em ordem de prioridade, terminando geralmente com uma família genérica como serif, sans-serif ou monospace para garantir uma fonte alternativa caso as anteriores não estejam disponíveis no sistema do usuário.</li>
+                <li>font-family: : Especifica a família da fonte a ser usada. Pode incluir uma lista de fontes em ordem de prioridade,
+                    terminando geralmente com uma família genérica como serif, sans-serif ou monospace para garantir uma fonte alternativa caso as anteriores não estejam disponíveis no sistema do usuário.</li>
             </ul>
         </section>
         <hr>
+        <!-- Propriedade Display -->
+        <section>
+            <h2> Propriedade Display</h2>
+            <p>A propriedade display no CSS define como um elemento HTML será renderizado e como ele participará do layout da página. 
+                Ela determina se o elemento será tratado como um bloco, inline, flexível, grade, entre outros, e também influencia o layout dos seus elementos filhos.</p>
+            <dl>
+                <dt>block:</dt>
+                <dd>O elemento é exibido como um bloco, ocupando toda a largura disponível e iniciando em uma nova linha. Exemplo: &lt;div&gt;, &lt;p&gt;.
+                    Elementos block iniciam em nova linha e ocupam toda a largura disponível, enquanto inline ficam lado a lado.
+                </dd>
+                <dt>inline:</dt>
+                <dd>O elemento ocupa apenas o espaço necessário para seu conteúdo, posicionando-se lado a lado com outros elementos inline. Propriedades de largura e altura são ignoradas.</dd>
+                <dt>inline-block:</dt>
+                <dd>Combina características de block e inline; permite que o elemento fique lado a lado com outros, mas aceita largura e altura definidas.</dd>
+                <dt>grid e inline-grid:</dt>
+                <dd>Cria um layout baseado em linhas e colunas, possibilitando definir tamanhos e espaçamentos específicos para as células da grade.Criam um sistema de grade para posicionar elementos em linhas e colunas, facilitando layouts complexos e responsivos.</dd>
+                <dt>flex e inline-flex:</dt>
+                <dd>Ativam o layout flexível, permitindo alinhar e distribuir os elementos filhos em linha ou coluna, com controle avançado de alinhamento e espaçamento.</dd>
+                <dt>none:</dt>
+                <dd>Remove o elemento da renderização, fazendo com que ele não ocupe espaço algum na página.</dd>
+                <dt>contents:</dt>
+                <dd>Faz com que o elemento não gere uma caixa própria, mas seus filhos são renderizados como se estivessem diretamente no lugar dele, mantendo estilos como cor e fonte.</dd>
+            </dl>
+            <p>Propriedades de largura e altura funcionam em block e inline-block, mas não em inline.</p>
+            <p>Display flex e grid são amplamente usados para criar layouts modernos e responsivos.</p>
+            <p><strong>display: none</strong> é diferente de <strong>visibility: hidden</strong>, pois remove o elemento do fluxo da página.</p>
+            <p>O valor <strong>initial</strong> redefine o display para o valor padrão do elemento, e <strong>inherit</strong> faz o elemento herdar o display do seu pai.</p>
+        </section>
+        <hr>
+        <!-- Propriedade Position  -->
+        <section>
+            <h2>Propriedade Position </h2>
+            <p>A propriedade position no CSS define como um elemento será posicionado dentro do documento HTML. Ela determina o método de posicionamento do elemento na página e pode assumir cinco valores principais.</p>
+            <dl>
+                <dt>static (padrão):</dt>
+                <dd>o elemento é posicionado de acordo com o fluxo normal do documento, sem aceitar as propriedades top, bottom, left e right. É o comportamento padrão de todos os elementos.                  
+                <dt>relative:</dt>
+                <dd>o elemento é posicionado relativamente à sua posição original no fluxo da página.
+                    Com esse valor, é possível usar as propriedades top, bottom, left e right para deslocar o elemento em relação à sua posição padrão, sem tirar o elemento do fluxo do documento.</dd>
+                <dt>absolute:</dt>
+                <dd>o elemento é posicionado em relação ao seu ancestral mais próximo que tenha position diferente de static. Ele é removido do fluxo normal e pode ser posicionado usando top, bottom, left e right em relação a esse ancestral posicionado.</dd>
+                <dt>fixed:</dt>                    
+                <dd>o elemento é posicionado em relação à janela do navegador e permanece fixo no lugar mesmo quando a página é rolada. Também aceita top, bottom, left e right para definir sua posição fixa.</dd>
+                <dt>sticky:</dt>
+                <dd>o elemento alterna entre comportamento relativo e fixo, dependendo da posição da rolagem da página. Ele se comporta como relativo até atingir um ponto definido (exemplo, top: 0), quando então fica fixo naquele ponto.</dd>
+            </dl>
+            <p>Além do valor da propriedade position, as propriedades auxiliares top, bottom, left e right são usadas para definir a posição exata do elemento, exceto quando position está em static, que ignora essas propriedades.</p>
+        </section>
+        <hr>
+        <!-- Propriedade Overflow -->
+        <section>
+            <h2>Propriedade Overflow</h2>
+            <p>A propriedade overflow do CSS controla como o conteúdo que excede as dimensões de um elemento é exibido, sendo essencial para gerenciar layouts e evitar sobreposições indesejadas.</p>
+            <h3>Valores principais</h3>
+            <dl>
+                <dt>visible (padrão):</dt>
+                <dd>Exibe o conteúdo mesmo que ultrapasse os limites do elemento, podendo sobrepor outros elementos.</dd>
+                <dt>hidden:</dt>
+                <dd>Corta o conteúdo excedente, ocultando-o sem barras de rolagem,</dd>
+                <dt>scroll:</dt>
+                <dd>Exibe barras de rolagem (horizontal e vertical) mesmo que o conteúdo não ultrapasse o elemento</dd>
+                <dt>auto:</dt>
+                <dd>Adiciona barras de rolagem apenas quando necessário, dependendo do navegador</dd>
+            </dl>
+            <h3>Controle direcional</h3>
+            <dl>
+                <dt>overflow-x:</dt>
+                <dd>Gerencia o excesso de conteúdo horizontalmente (ex: scroll, hidden)</dd>
+                <dt>overflow-y:</dt>
+                <dd>Controla o excesso verticalmente (ex: auto, hidden)</dd>
+                <dt>Sintaxe abreviada:</dt>
+                <dd>overflow: [horizontal] [vertical] (ex: overflow: scroll auto para rolagem horizontal fixa e vertical automática)</dd>
+            </dl>  
+        </section>
+        <hr>
+        <!-- Propriedade Float -->
+        <section>
+        <h2>Propriedade Float</h2>
+        <img class="imagemFloatEOpacity" src="../../BagulhosAleatorios/Computador.jpeg" alt="imagem com float left">
+        <p>A propriedade float do CSS é usada para posicionar elementos à esquerda ou à direita dentro de um container, permitindo que outros elementos (como texto ou elementos em linha) se organizem ao seu redor.
+            É amplamente utilizada para criar layouts com colunas, imagens flutuantes e interfaces complexas.</p>
+        <h3>Valores principais</h3>
+        <dl>
+            <dt>left:</dt>    
+            <dd>Posiciona o elemento à esquerda do container, com conteúdo fluindo à sua direita.</dd>
+            <dt>right:</dt>
+            <dd>Posiciona o elemento à direita do container, com conteúdo fluindo à sua esquerda.</dd>
+            <dt>none (padrão):</dt>
+            <dd>Mantém o elemento no fluxo normal, sem flutuação.</dd>
+            <dt>inline-start/inline-end (experimentais):</dt>
+            <dd>Posicionam o elemento conforme a direção do texto (ex: esquerda para ltr, direita para rtl).</dd>
+        </dl>
+        <h3>Comportamento e impacto</h3>
+        <ul>
+            <li>Remoção do fluxo normal: O elemento é retirado do fluxo do documento, podendo sobrepor outros elementos ou colapsar o container pai se não houver altura definida.</li>
+            <li>Alteração do display: Elementos com float diferente de none têm seu display computado como block (ex: inline → block).</li>
+            <li>Compatibilidade com flexbox/grid: float não afeta elementos com display: flex ou display: grid.</li>
+        </ul>
+        <h3>Problemas comuns e soluções</h3>
+        <ul>
+            <li><details>
+                <summary>Colapso do container pai</summary>
+                <ul>
+                    <li>Causa: Elementos flutuantes não contribuem para a altura do container.</li>
+                    <li>Solução: Usar overflow: hidden no container ou adicionar um pseudo-elemento com clear: both.</li>
+                </ul>
+            </details></li> 
+            <li><details>
+                <summary>Sobreposição de conteúdo</summary>
+                <ul>
+                    <li>Causa: Elementos subsequentes envolvem o flutuante.</li>
+                    <li>Solução: Aplicar clear: left, clear: right ou clear: both no elemento que deve ficar abaixo.</li>
+                </ul>
+            </details></li> 
+        </ul>
+        <p>Embora ainda seja útil para alinhar imagens e textos, float foi substituído em layouts complexos por Flexbox e CSS Grid, que oferecem maior controle e responsividade.</p>
+        </section>
+        <hr>
+        <!-- Propriedade Opacity -->
+        <section>
+            <h2>Propriedade Opacity</h2>
+            <p>A propriedade opacity em CSS especifica o grau de transparência de um elemento, determinando o quanto o conteúdo de fundo atrás desse elemento será visível. Seu valor varia de 0 a 1, onde:</p>
+            <ul>
+                <li>0 significa totalmente transparente (invisível).</li>
+                <li>valores entre 0 e 1 indicam níveis variados de translucidez.</li>
+                <li>1 representa totalmente opaco (sem transparência).</li>
+            </ul>
+            <p>Essa propriedade afeta o elemento inteiro, incluindo seu conteúdo e elementos filhos, ou seja, tudo dentro do elemento terá a mesma opacidade relativa ao fundo, mesmo que filhos tenham valores diferentes de opacidade.
+                Por isso, se a intenção é deixar apenas o fundo transparente sem afetar o conteúdo, recomenda-se usar a cor de fundo com valor rgba() em vez de opacity.</p>
+        </section>
+        <hr>
+        <!-- Efeito Dropdown -->
+        <section>
+           <h2>Efeito Dropdown</h2>
+        </section>
+        <hr>
+        <!-- Especificidade CSS -->
+        <section>
+            <h2>Especificidade CSS</h2>
+            <p>A especificidade CSS é um algoritmo que determina qual regra de estilo será aplicada a um elemento HTML quando há múltiplas regras conflitantes.
+                Ela funciona como um sistema de "peso" ou "pontuação" que o navegador usa para decidir qual seletor tem prioridade, garantindo que o estilo mais específico seja aplicado.</p>
+            <ol>
+                <li>Seletores de tipo (elemento) e pseudoelementos: menor peso.</li>
+                <li>Seletores de classe, atributos e pseudoclasses: peso médio.</li>
+                <li>Seletores de ID: peso alto.</li>
+                <li>Estilos inline (atributo style): maior peso.</li>
+            </ol>
+            <h3>Exemplo prático</h3>
+            <ol>
+                <li>Um seletor de elemento como h1 tem especificidade baixa.</li>
+                <li>Um seletor de classe como .main-heading tem especificidade maior.</li>
+                <li>Um seletor de ID como #header tem especificidade ainda maior.</li>
+                <li>Um estilo inline, como style="color: red;", tem a maior especificidade.</li>
+            </ol>
+        </section>
+        <hr>
+        <!-- Regra Importent -->
+        <section>
+            <h2>Regra Importent</h2>
+            <p>A regra !important em CSS é uma diretiva que força a aplicação de uma determinada declaração de estilo, independentemente da especificidade dos seletores ou da ordem das regras na folha de estilos. Quando uma propriedade CSS é marcada com !important, ela tem prioridade máxima sobre outras declarações conflitantes, exceto se outra declaração também usar !important com um seletor de maior especificidade.</p>
+            <h3>Características da regra !important</h3>
+            <ul class="lista-grudada">
+                <li>Prioridade máxima: A declaração com !important sobrescreve todas as outras regras para aquela propriedade, mesmo que tenham seletores com maior especificidade ou estejam declaradas depois na folha de estilos.</li>
+                <li>Uso cauteloso: O uso excessivo de !important pode tornar o CSS difícil de manter, pois cria um código frágil onde outras regras precisam usar !important para sobrescrever, gerando uma "guerra" de prioridades.</li>
+                <li>Combinação com especificidade: Se duas regras conflitantes usam !important, a especificidade dos seletores é usada para decidir qual será aplicada.</li>
+                <li>Não afeta herança: !important atua apenas na regra onde é declarado, não altera o comportamento da herança CSS.</li>
+            </ul>
+            <h3>Exemplo prático</h3>
+            <p>p { <br>
+            color: blue !important; <br>
+            } <br>
+            .text { <br>
+            color: red; <br>
+            }</p>
+            <p>Neste caso, o parágrafo terá a cor azul, mesmo que a regra .text apareça depois, porque o !important na regra do p tem prioridade maior.</p>
+            <h3>Boas práticas</h3>
+            <ul>
+                <li>Evite usar !important a menos que seja realmente necessário, como para corrigir estilos de terceiros ou em situações específicas.</li>
+                <li>Prefira resolver conflitos com a especificidade correta dos seletores e organização do código.</li>
+                <li>Use !important como último recurso para evitar problemas de manutenção e escalabilidade no CSS.</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Efeito Gradiente -->
+        <section>
+            <h2>Efeito Gradiente</h2>
+            <p>O efeito gradiente no CSS é uma técnica que cria uma transição suave entre duas ou mais cores em um elemento, podendo ser aplicado em fundos, bordas, textos, entre outros.</p>
+            <h3> Existem dois tipos principais de gradientes no CSS:</h3>
+            <ul class="lista-grudada">
+                <li>Gradiente linear: a transição de cores ocorre ao longo de uma linha reta, que pode ter direção e sentido definidos por ângulos ou palavras-chave como to right, to left, to top, to bottom e suas combinações diagonais.
+                    Por padrão, o gradiente linear vai de cima para baixo (equivalente a to bottom). É possível usar vários pontos de cor para criar transições mais complexas e também ajustar transparências para suavizar o efeito.
+                    Exemplo: <strong>background-image: linear-gradient(direção, cor1, cor2, ...);</strong></li>
+                <li>Gradiente radial: a transição de cor ocorre a partir de um ponto central, expandindo-se em círculos ou elipses. 
+                    Pode-se definir a posição do centro e o formato do gradiente (círculo ou elipse), além das cores e seus pontos de transição.
+                    Exemplo: <strong>background-image: linear-gradient(to right, green, black);</strong></li>
+            </ul>
+            <p>Para bordas com efeito gradiente, é comum usar a propriedade <strong>background-clip</strong> combinada com gradientes para criar bordas coloridas e suaves,
+                preservando o arredondamento com border-radius e usando uma borda transparente para separar as áreas.</p>
+            <p>Além disso, o efeito gradiente pode ser aplicado em textos usando técnicas como <strong>background-clip: text</strong> com gradientes lineares para criar títulos coloridos e visuais atraentes.</p>
+        </section>
+        <hr>
+        <!-- Propriedades Text Shadow e Box Shadow -->
+        <section>
+            <h2>Propriedades Text Shadow e Box Shadow</h2>
+            <h3>Text Shadow</h3>
+            <p>A propriedade text-shadow adiciona sombras ao texto, criando efeitos de profundidade e destaque.
+                Ela aceita uma ou mais sombras, que são aplicadas ao texto em camadas, separadas por vírgulas.</p>
+            <details>
+                <summary>text-shadow: deslocamento-x deslocamento-y raio-de-desfoque cor;</summary>
+                <ul class="lista-grudada">
+                    <li>deslocamento-x: distância horizontal da sombra (valores positivos deslocam para a direita, negativos para a esquerda).</li>
+                    <li>deslocamento-y: distância vertical da sombra (valores positivos deslocam para baixo, negativos para cima).</li>
+                    <li>raio-de-desfoque (opcional): quanto maior, mais desfocada e suave fica a sombra.</li>
+                    <li>cor (opcional, mas recomendado): cor da sombra.</li>
+                </ul>
+            </details>
+            <h4>Exemplo</h4>
+            <p><mark>text-shadow: 2px 3px 2px rgba(0,0,0,0.5);</mark></p>
+            <h3>Box Shadow</h3>
+            <p>A propriedade box-shadow adiciona sombras ao redor de elementos, criando a sensação de profundidade e elevação visual.
+                Pode ser aplicada a quase qualquer elemento HTML.</p>
+            <details>
+                <summary>box-shadow: deslocamento-x deslocamento-y raio-de-desfoque raio-de-espalhamento cor;</summary>
+                <ul class="lista-grudada">
+                    <li>deslocamento-x: distância horizontal da sombra (valores positivos deslocam para a direita, negativos para a esquerda).</li>
+                    <li>deslocamento-y: distância vertical da sombra (valores positivos deslocam para baixo, negativos para cima).</li>
+                    <li>raio-de-desfoque (opcional): quanto maior, mais desfocada e suave fica a sombra.</li>
+                    <li>raio-de-espalhamento (opcional): aumenta ou diminui o tamanho da sombra.</li>
+                    <li>cor (opcional, mas recomendado): cor da sombra.</li>
+                    <li>inset (opcional): inverte a sombra para dentro do elemento.</li>
+                </ul>
+            </details>
+            <h4>Exemplo</h4>
+            <p><mark>box-shadow: 10px 5px 5px black;</mark></p>
+            <p>Múltiplas sombras: <strong>box-shadow: inset 0 0 8px 4px gold, 0 0 8px 1px black;</strong></p>
+            <table>
+                <tr>
+                    <th>Propriedade</th>
+                    <th>Aplica-se em</th>
+                    <th>Função principal</th>
+                    <th>Sintaxe básica</th>
+                    <th>Permite múltiplas sombras?</th>
+                </tr>
+                <tr>
+                    <td>text-shadow</td>
+                    <td>Texto</td>
+                    <td>Sombra nas letras do texto</td>
+                    <td>text-shadow: offset-x offset-y blur color;</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Caixas (elementos)</td>
+                    <td>Sombra ao redor do elemento</td>
+                    <td>box-shadow: offset-x offset-y blur spread color [inset];</td>
+                    <td>Sim</td>
+                </tr>
+            </table>
+            <p>Se o elemento tiver bordas arredondadas (border-radius), a sombra acompanha o arredondamento.</p>
+            <p>Exemplos de uso para simular diferentes fontes de luz, sombras internas, elevação ao passar o mouse, e efeitos artísticos são comuns.</p>
+        </section>
+        <hr>
+        <!-- Media Queries -->
+        <section>
+            <h2>Media Queries</h2>
+            <p>Media Queries são uma funcionalidade do CSS que permite aplicar estilos diferentes a uma página web com base em condições específicas do dispositivo ou da tela, como largura, altura, resolução e orientação.
+                Elas são fundamentais para o design responsivo, pois possibilitam que o layout e a aparência do site se adaptem automaticamente a diferentes tamanhos e tipos de dispositivos, sem alterar o conteúdo em si.</p>
+            <h3>Como funcionam as Media Queries</h3>    
+            <ul>
+                <li>Uma media query consiste em um media type (como screen, print ou all) e uma ou mais expressões chamadas media features (como max-width, min-width, orientation), que avaliam características do dispositivo.</li>
+                <li>Se a condição da media query for verdadeira para o dispositivo que está exibindo a página, os estilos CSS dentro dela são aplicados.</li>
+                <li> A sintaxe básica é:<br>@media (condição) {<br>
+                    <mark>/* estilos CSS aplicados se a condição for verdadeira */<br>
+                    }</mark></li>
+                <li>Exemplo para aplicar estilos em telas com largura máxima de 600px:<br>
+                    <mark>@media (max-width: 600px) {<br>
+                      body {<br>
+                        background-color: lightblue;<br>
+                      }<br>
+                }</mark></li>
+            </ul>
+            <h3>Exemplos de uso prático</h3>
+            <ul>
+                <li>Ajustar layouts para smartphones, tablets e desktops, modificando a exibição de elementos como barras laterais, menus e colunas.</li>
+                <li>Alterar tamanhos de fonte, cores, margens e outros estilos para melhorar a legibilidade e usabilidade em diferentes dispositivos.</li>
+                <li>Aplicar estilos específicos para orientação retrato ou paisagem, ou para resoluções específicas.</li>
+            </ul>
+            <h3>Características comuns usadas em Media Queries</h3>
+            <ul>
+                <li>width, min-width, max-width</li>
+                <li>height, min-height, max-height</li>
+                <li>orientation (portrait ou landscape)</li>
+                <li>resolution</li>
+                <li>aspect-ratio</li>
+                <li>device-width, device-height</li>
+            </ul> 
+            <h3>Vantagens das Media Queries</h3>           
+            <ul>
+                <li>Permitem criar layouts flexíveis e adaptativos, melhorando a experiência do usuário.</li>
+                <li>Evitam a necessidade de múltiplas versões do mesmo site para diferentes dispositivos.</li>
+                <li>São suportadas pela maioria dos navegadores modernos desde CSS3.</li>
+            </ul>
+        </section>
+        <!-- Flexbox -->
+        <section>
+            <h2>Flexbox</h2>
+            <p>O Flexbox, ou Flexible Box Layout, é um modelo de layout do CSS3 que facilita a organização e o alinhamento de elementos dentro de um container de forma dinâmica e flexível, adaptando-se ao tamanho disponível e reorganizando os itens conforme necessário.</p>
+            <h3>Conceitos principais do Flexbox:</h3>    
+            <ul>
+                <li>Flex Container: o elemento pai que recebe display: flex ou display: inline-flex, ativando o modo flexbox para seus filhos.</li>
+                <li>Flex Items: os elementos filhos do container flex, que passam a ser dispostos segundo regras flexíveis.</li>
+                <li>Eixos: o layout flex é unidimensional, com um eixo principal (main axis) e um eixo transversal (cross axis). A direção dos itens pode ser controlada pela propriedade flex-direction (por exemplo, row para linha ou column para coluna).</li>
+                <li>Propriedades do container: incluem justify-content (alinhamento no eixo principal), align-items (alinhamento no eixo transversal), flex-wrap (controle de quebra de linha dos itens), entre outras.</li>
+                <li>Propriedades dos itens: como flex-grow (crescimento), flex-shrink (encolhimento), flex-basis (tamanho base), e order (ordem visual dos itens, independente da ordem no HTML)</li>
+            </ul>
+            <h3>Benefícios do Flexbox:</h3>
+            <ul>
+                <li>Layouts responsivos e adaptativos sem a necessidade de usar floats ou posicionamento complexo.</li>
+                <li>Alinhamento fácil e centralização de elementos vertical e horizontalmente.</li>
+                <li>Controle da ordem visual dos elementos sem alterar o HTML.</li>
+                <li>Distribuição dinâmica do espaço disponível entre os itens.</li>
+            </ul>
+            <h3>Exemplo básico:</h3>
+            <mark>.container {<br>
+            display: flex;<br>
+            flex-direction: row; /* padrão: itens em linha */<br>
+            justify-content: center; /* centraliza itens no eixo principal */<br>
+            align-items: center; /* centraliza itens no eixo transversal */<br>
+            }<br></mark>
+        </section>
     </main>
+    <p class="laedsonSites">Laedson Sites</p>
 </body>
 </html>
